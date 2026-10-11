@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#06110c">
+<title>Kallanumm Policeum | Build By One</title>
+<style>
+:root{--bg:#06110c;--p:#0d2117;--p2:#10291d;--gold:#f4c542;--gold2:#ffe17a;--green:#38c77d;--red:#e44747;--text:#f7f5e9;--muted:#9db0a5;--line:#294b39}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% -10%,#19452e,#08150e 38%,#030805 100%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif}.app{max-width:520px;margin:auto;min-height:100vh;padding:16px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.brand{font-size:11px;font-weight:900;letter-spacing:.12em;color:var(--gold)}.home{width:40px;height:40px;border-radius:13px;border:1px solid var(--line);background:#0a1912;color:#fff}.screen{display:none;animation:f .25s ease}.active{display:block}@keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}h1{font-size:36px;line-height:1.02;color:var(--gold2);margin:0}h2{margin:4px 0 8px;font-size:26px}.sub{color:var(--muted);font-size:13px;line-height:1.5}.hero{text-align:center;min-height:calc(100vh - 55px);display:flex;flex-direction:column;justify-content:center}.emblem{width:106px;height:106px;margin:0 auto 18px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#28563a,#09170f 70%);box-shadow:0 0 55px #f4c54222;font-size:48px}.tag{display:inline-block;padding:7px 11px;border-radius:99px;background:#0a2116;border:1px solid #28563d;color:#bce8cf;font-size:10px;font-weight:800;letter-spacing:.08em;margin-bottom:15px}.card{background:linear-gradient(160deg,#10271bfa,#07150ef8);border:1px solid var(--line);border-radius:22px;padding:17px;margin-bottom:13px;box-shadow:0 18px 55px #0007}.btn{width:100%;padding:15px 17px;margin-top:9px;border:0;border-radius:15px;background:linear-gradient(135deg,#ffdc56,#eda800);color:#171307;font-weight:900}.btn.secondary{background:#10271c;color:#f5f2e7;border:1px solid #2c503e}.btn:disabled{opacity:.45}.player{display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px solid #1c382a}.player:last-child{border:0}.num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#173526;color:var(--gold);font-size:12px;font-weight:900}.player input{flex:1}.input{width:100%;padding:13px;border-radius:12px;border:1px solid #2b4c3b;background:#07140e;color:#fff;outline:0}.roles{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:10px}.rolechip{font-size:9px;text-align:center;color:#cad7d0;background:#0a1a12;border:1px solid #234534;border-radius:12px;padding:8px 2px}.rolechip b{display:block;font-size:17px;color:#fff;margin-bottom:4px}.pass{text-align:center;padding:35px 8px}.lock{font-size:58px}.secret{min-height:390px;border:2px solid var(--gold);border-radius:28px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:25px;background:radial-gradient(circle at 50% 20%,#432b11,#170f07 50%,#070907);box-shadow:0 0 70px #f4c5421c}.secret .sym{font-size:88px}.secret h2{font-size:38px;letter-spacing:.07em;color:var(--gold2)}.timer{width:190px;height:190px;border-radius:50%;margin:15px auto;background:conic-gradient(var(--green) var(--pc,100%),#173625 0);display:grid;place-items:center;position:relative}.timer:before{content:"";position:absolute;width:164px;height:164px;border-radius:50%;background:#08160f}.timerin{position:relative;text-align:center}.timer strong{display:block;font-size:39px}.timer span{font-size:10px;color:var(--muted)}.prompt{font-weight:800;line-height:1.4}.suspects{display:grid;grid-template-columns:1fr 1fr;gap:8px}.suspect{padding:12px;border-radius:15px;border:1px solid var(--line);background:#0a1b13;color:#fff;text-align:left}.suspect.sel{border-color:var(--gold);background:#29240f}.av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#183a29;color:var(--gold);font-weight:900;margin-bottom:7px}.reveal{min-height:calc(100vh - 75px);display:grid;place-items:center}.revealbox{width:100%;padding:42px 20px;text-align:center;border-radius:30px;background:radial-gradient(circle,#481313,#170909 55%,#070606);border:1px solid #8d3434;box-shadow:0 0 80px #e4474720}.revealbox .sym{font-size:88px}.red{color:#ff6b6b}.scores .row{display:flex;align-items:center;gap:10px;padding:13px 0;border-bottom:1px solid #1c382a}.scores .row:last-child{border:0}.rank{width:30px;color:var(--gold);font-weight:900}.sname{flex:1;font-weight:800}.score{color:var(--gold2);font-weight:900}.small{font-size:11px;color:var(--muted);text-align:center}.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,20px);opacity:0;background:var(--gold);color:#171307;padding:10px 15px;border-radius:99px;font-size:12px;font-weight:900;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* Build By One branding strip */
+.brand-marquee{display:none;position:fixed;z-index:20;left:0;right:0;bottom:0;overflow:hidden;background:#07140e;border-top:1px solid #3b6548;padding:9px 0;color:#f4c542;font-size:10px;font-weight:900;letter-spacing:.12em;white-space:nowrap}
+.brand-marquee .track{display:flex;width:max-content;animation:brand-scroll 24s linear infinite}
+.brand-marquee .track span{padding-right:42px}
+@keyframes brand-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+body.game-started .brand-marquee{display:block}
+body.game-started .app{padding-bottom:52px}
+@media(prefers-reduced-motion:reduce){.brand-marquee .track{animation:none;transform:none}}
+
+</style>
+</head>
+<body>
+<div class="app">
+<div class="top"><div class="brand">✦ BUILD BY ONE · KALLANUM POLICEUM</div><button class="home" onclick="go('home')" aria-label="Home">⌂</button></div>
+
+<section id="home" class="screen active"><div class="hero">
+<div class="emblem">✦</div><span class="tag">BUILT BY BUILD BY ONE</span>
+<h1>KALLANUM<br>POLICEUM</h1><p class="sub">Guess • Accuse • Reveal<br><b>A Nadan Social Deduction Game</b></p>
+<p class="sub" style="margin-top:10px"><b style="color:var(--gold)">BUILD BY ONE</b><br>Creative Digital Experiences</p>
+<button class="btn" onclick="go('setup')">▶ NEW GAME</button><button class="btn secondary" onclick="rules()">ⓘ HOW TO PLAY</button>
+<p class="small">Pass the phone. Keep your role secret. Let the drama begin.</p>
+<p class="small" style="max-width:330px;margin:12px auto 0">Privacy-friendly play: this offline game does not ask for personal details or use real-money stakes.</p>
+</div></section>
+
+<section id="setup" class="screen"><div class="card"><h2>Create Game</h2><p class="sub">Classic V1 • 5 players</p><div id="players"></div></div>
+<div class="card"><h3>Virtual Points</h3><p class="small" style="text-align:left">Game points only — no real-money stakes.</p><div class="roles">
+<div class="rolechip">👑<b>500</b>Raja</div><div class="rolechip">👸<b>400</b>Rani</div><div class="rolechip">📜<b>200</b>Manthri</div><div class="rolechip">👮<b>100</b>Police</div><div class="rolechip">🕵️<b>0</b>Kallan</div></div></div>
+<button class="btn" onclick="start()">♠ SHUFFLE & START</button><button class="btn secondary" onclick="go('home')">Back</button></section>
+
+<section id="pass" class="screen"><div class="pass"><div class="lock">🔒</div><span class="tag">PRIVATE REVEAL</span><h2>Pass the phone to</h2><h1 id="passName" style="font-size:34px"></h1><p class="sub">Make sure nobody else is looking.</p><button class="btn" onclick="reveal()">👁 REVEAL MY ROLE</button><p class="small" id="count"></p></div></section>
+
+<section id="role" class="screen"><div class="secret"><div class="sym" id="rsym"></div><p id="rplayer"></p><h2 id="rtitle"></h2><p id="rdesc" class="sub"></p></div><button class="btn" onclick="hideRole()">✓ I REMEMBERED — HIDE ROLE</button></section>
+
+<section id="discussion" class="screen"><div class="card" style="text-align:center"><span class="tag">ROUND <span id="rnd">1</span></span>
+<div class="timer"><div class="timerin"><strong id="time">03:00</strong><span>DISCUSSION</span></div></div>
+<div class="prompt" id="prompt"></div><button class="btn" id="timerBtn" onclick="timerToggle()">▶ START DISCUSSION</button><button class="btn secondary" onclick="newPrompt()">💬 NEXT QUESTION</button></div>
+<div class="card"><h3>Phone aside 📵</h3><p class="small" style="text-align:left">Discuss face-to-face. Police will make the final ONE guess.</p></div>
+<button class="btn" onclick="guessScreen()">👮 POLICE GUESS</button></section>
+
+<section id="guess" class="screen"><div class="card"><span class="tag">POLICE TURN</span><h2>Who is the Kallan?</h2><p class="sub">Choose one. No second guess.</p><div class="suspects" id="suspects"></div><button class="btn" id="guessBtn" disabled onclick="submitGuess()">SUBMIT GUESS</button></div></section>
+
+<section id="reveal" class="screen"><div class="reveal"><div class="revealbox"><div class="sym">🕵️</div><div class="red" style="font-size:11px;font-weight:900;letter-spacing:.15em">THE KALLAN IS</div><h1 id="kname"></h1><h2 id="result" class="red" style="font-size:22px"></h2><p id="detail" class="sub"></p><button class="btn" onclick="next()">▶ NEXT ROUND</button></div></div></section>
+
+<section id="final" class="screen"><div class="card"><div style="text-align:center;padding:12px"><div style="font-size:65px">🏆</div><h2>FINAL LEADERBOARD</h2></div><div id="scores" class="scores"></div><button class="btn" onclick="reset()">↻ PLAY AGAIN</button><div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--line)"><p class="small" style="line-height:1.8"><b style="color:var(--gold)">BUILD BY ONE</b><br>Digital Design · Web & Game Experiences · Creative Branding<br>Contact: add your official phone number / email / website here</p></div></div></section>
+</div><div id="toast" class="toast"></div>
+<div class="brand-marquee" aria-label="Build By One brand services" role="region"><div class="track" aria-hidden="true"><span>BUILD BY ONE ✦ DIGITAL DESIGN ✦ WEB & GAME EXPERIENCES ✦ CREATIVE BRANDING ✦ USER-FIRST DESIGN ✦ CONTACT: ADD YOUR OFFICIAL DETAILS ✦ </span><span>BUILD BY ONE ✦ DIGITAL DESIGN ✦ WEB & GAME EXPERIENCES ✦ CREATIVE BRANDING ✦ USER-FIRST DESIGN ✦ CONTACT: ADD YOUR OFFICIAL DETAILS ✦ </span></div></div>
+
+<script>
+const roles=[
+{k:'Raja',s:'👑',p:500,d:'You are the Raja. Stay calm and observe everyone.'},
+{k:'Rani',s:'👸',p:400,d:'You are the Rani. Read the room and protect your suspicion.'},
+{k:'Manthri',s:'📜',p:200,d:'You are the Manthri. Watch behaviour and arguments carefully.'},
+{k:'Police',s:'👮',p:100,d:'You are the Police. Listen to everyone. At the end, choose ONE Kallan.'},
+{k:'Kallan',s:'🕵️',p:0,d:'You are the Kallan. Stay believable and confuse the Police.'}
+];
+const qs=['Who looks the most suspicious? Why?','Who is being unusually quiet?','Who is overacting too much?','Whose story feels the weakest?','If you were Police, whom would you check first?','Who changed their answer after hearing others?'];
+let ps=[],a=[],ri=0,round=1,chosen=null,t=180,tid=null;
+const $=id=>document.getElementById(id);
+function go(id){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));$(id).classList.add('active');document.body.classList.toggle('game-started',id!=='home');scrollTo(0,0)}
+function init(){let w=$('players');w.innerHTML='';for(let i=0;i<5;i++)w.innerHTML+=`<div class="player"><div class="num">${i+1}</div><input class="input" id="p${i}" maxlength="18" placeholder="Player ${i+1}"></div>`}
+init();
+function rules(){alert('CLASSIC\n\n1. Enter 5 names.\n2. Pass the phone and privately reveal roles.\n3. Put the phone away and discuss.\n4. Police chooses ONE Kallan.\n5. Reveal the Kallan and score the round.\n6. Police rotates each round.\n\nAll amounts are virtual game points.')}
+function shuffle(x){for(let i=x.length-1;i;i--){let j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x}
+function start(){ps=[];for(let i=0;i<5;i++)ps.push({name:($('p'+i).value.trim()||'Player '+(i+1)),score:0});round=1;build();go('pass');pass()}
+function build(){let pi=(round-1)%5;a=Array(5);a[pi]=roles[3];let idx=[0,1,2,3,4].filter(i=>i!==pi),rr=shuffle(roles.filter(r=>r.k!=='Police').slice());idx.forEach((x,j)=>a[x]=rr[j]);ri=0;chosen=null;$('rnd').textContent=round}
+function pass(){$('passName').textContent=ps[ri].name;$('count').textContent=`Player ${ri+1} of 5`}
+function reveal(){$('rplayer').textContent=ps[ri].name.toUpperCase()+' • YOUR SECRET ROLE';$('rsym').textContent=a[ri].s;$('rtitle').textContent=a[ri].k;$('rdesc').textContent=a[ri].d;go('role')}
+function hideRole(){ri++;if(ri<5){go('pass');pass()}else discussion()}
+function discussion(){t=180;clearInterval(tid);tid=null;$('time').textContent='03:00';$('timerBtn').textContent='▶ START DISCUSSION';$('prompt').textContent=qs[Math.floor(Math.random()*qs.length)];$('discussion').querySelector('.timer').style.setProperty('--pc','100%');go('discussion')}
+function newPrompt(){$('prompt').textContent=qs[Math.floor(Math.random()*qs.length)]}
+function timerToggle(){if(tid){clearInterval(tid);tid=null;$('timerBtn').textContent='▶ RESUME DISCUSSION';return}$('timerBtn').textContent='Ⅱ PAUSE DISCUSSION';tid=setInterval(()=>{t--;let m=Math.floor(t/60),s=t%60;$('time').textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;$('discussion').querySelector('.timer').style.setProperty('--pc',Math.max(0,t/180*100)+'%');if(t<=0){clearInterval(tid);tid=null;$('timerBtn').textContent='✓ TIME UP';toast('Discussion time is over!')}},1000)}
+function guessScreen(){clearInterval(tid);tid=null;chosen=null;$('guessBtn').disabled=true;let w=$('suspects');w.innerHTML='';ps.forEach((p,i)=>{let b=document.createElement('button');b.className='suspect';b.innerHTML=`<div class="av">${p.name[0].toUpperCase()}</div><b>${p.name}</b>`;b.onclick=()=>{document.querySelectorAll('.suspect').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');chosen=i;$('guessBtn').disabled=false};w.appendChild(b)});go('guess')}
+function submitGuess(){let police=a.findIndex(r=>r.k==='Police'),kallan=a.findIndex(r=>r.k==='Kallan'),ok=chosen===kallan;ps.forEach((p,i)=>p.score+=a[i].p);if(ok){ps[police].score+=100;ps[kallan].score+=50}else ps[kallan].score+=100;$('kname').textContent=ps[kallan].name;$('result').textContent=ok?'POLICE CAUGHT THE KALLAN!':'POLICE WAS WRONG — KALLAN ESCAPED!';$('detail').textContent=ok?`${ps[police].name} guessed correctly. Police +100 bonus.`:`${ps[kallan].name} fooled the Police. Kallan +100 escape bonus.`;go('reveal')}
+function next(){round++;if(round>5)return final();build();go('pass');pass()}
+function final(){let s=[...ps].sort((x,y)=>y.score-x.score);$('scores').innerHTML=s.map((p,i)=>`<div class="row"><div class="rank">#${i+1}</div><div class="sname">${p.name}</div><div class="score">${p.score}</div></div>`).join('');go('final')}
+function reset(){clearInterval(tid);ps=[];round=1;init();go('home')}
+function toast(x){$('toast').textContent=x;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),1700)}
+</script>
+</body>
+</html>
